@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ym0-If-XLt">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlW-5Q-5Dt">
+                                <rect key="frame" x="87" y="269" width="147" height="30"/>
+                                <state key="normal" title="Make me Super Cool!"/>
+                                <connections>
+                                    <action selector="makeMeCoolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fbd-xq-ZSq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-55-E7E">
+                                <rect key="frame" x="36" y="41" width="248" height="66"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tpb-pP-ybB">
+                                <rect key="frame" x="36" y="41" width="248" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="HuA-oC-eSJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="0Fc-sy-Oyb"/>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="centerX" secondItem="YlW-5Q-5Dt" secondAttribute="centerX" id="3lU-ll-JcA"/>
+                            <constraint firstItem="ym0-If-XLt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6tw-kJ-IRQ"/>
+                            <constraint firstItem="ym0-If-XLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7OT-La-0EA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tpb-pP-ybB" secondAttribute="trailing" constant="20" id="BB6-cP-Do4"/>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="leading" secondItem="Mhd-55-E7E" secondAttribute="leading" id="b60-Ea-G2C"/>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="bottom" secondItem="Mhd-55-E7E" secondAttribute="bottom" id="b8Z-1r-th6"/>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="eSY-2r-bMc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ym0-If-XLt" secondAttribute="trailing" constant="-20" id="hh7-dQ-9fg"/>
+                            <constraint firstItem="YlW-5Q-5Dt" firstAttribute="centerY" secondItem="ym0-If-XLt" secondAttribute="centerY" id="oGv-eI-bNO"/>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="trailing" secondItem="Mhd-55-E7E" secondAttribute="trailing" id="tLj-dD-xS7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ym0-If-XLt" secondAttribute="bottom" id="xgV-gD-yLv"/>
+                            <constraint firstItem="Tpb-pP-ybB" firstAttribute="top" secondItem="Mhd-55-E7E" secondAttribute="top" id="yRR-Jc-lwb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="ym0-If-XLt" id="fuh-pI-WzY"/>
+                        <outlet property="boomImage" destination="Tpb-pP-ybB" id="J6Y-UO-7XV"/>
+                        <outlet property="notCoolButton" destination="YlW-5Q-5Dt" id="Kwd-tT-D1C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="283"/>
+        </scene>
+    </scenes>
+</document>
